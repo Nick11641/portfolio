@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje prvé portfólio</title>
+<meta name="description" content="Šablóna osobného portfólia – Moje prvé portfólio. Uprav si meno, projekty a kontakt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="logo" href="#domov">◍ Moje prvé <span>portfólio</span></a>
+    <nav class="nav" id="nav">
+      <a href="#o-mne">O mne</a>
+      <a href="#zrucnosti">Zručnosti</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="top-actions">
+      <a href="#kontakt" class="cta small">Kontaktuj ma</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="wrap hero" id="domov">
+    <div class="hero-text">
+      <span class="badge">👋 Šablóna portfólia — uprav si ju podľa seba</span>
+      <h1>Ahoj, som <span class="grad">Tvoje meno</span><br>Junior Web Developer</h1>
+      <p class="lead">Toto je jednoduchá šablóna s názvom <b>„Moje prvé portfólio“</b>. Prepíš texty, doplň svoje projekty a nasadzuj. Žiadny backend, len HTML + CSS + JS.</p>
+      <div class="hero-btns">
+        <a href="#projekty" class="cta">Pozrieť projekty</a>
+        <a href="#kontakt" class="ghost-btn">Napíš mi</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>3+</b><span>roky učenia</span></div>
+        <div><b>6</b><span>vzorových projektov</span></div>
+        <div><b>100%</b><span>responzívne</span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avatar">TM</div>
+      <h3>Tvoje meno</h3>
+      <p>HTML • CSS • JavaScript</p>
+      <div class="tags">
+        <span>🌍 Slovensko</span>
+        <span>💼 Open to work</span>
+      </div>
+      <div class="socials">
+        <a href="#" title="GitHub">GitHub</a>
+        <a href="#" title="LinkedIn">LinkedIn</a>
+        <a href="#" title="Email">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O MNE -->
+  <section class="wrap section" id="o-mne">
+    <span class="kicker">O mne</span>
+    <h2>Krátko o mne</h2>
+    <p class="sub">Prepíš tento odstavec vlastným textom. Kto si, čo robíš a čo hľadáš.</p>
+    <div class="cards3">
+      <div class="card">
+        <div class="ico">🎓</div>
+        <h3>Učím sa</h3>
+        <p>Základy webu, Git, responzívny dizajn. Každý týždeň jeden malý projekt.</p>
+      </div>
+      <div class="card">
+        <div class="ico">💻</div>
+        <h3>Tvorím</h3>
+        <p>Jednoduché stránky, landing pages a mini aplikácie v čistom JavaScripte.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🚀</div>
+        <h3>Hľadám</h3>
+        <p>Stáž / junior pozíciu / freelance zákazky. Rýchlo sa učím a dodám načas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZRUČNOSTI -->
+  <section class="wrap section" id="zrucnosti">
+    <span class="kicker">Zručnosti</span>
+    <h2>Čo ovládam</h2>
+    <p class="sub">Úrovne si uprav v súbore <code>data.js</code> → pole <code>SKILLS</code>.</p>
+    <div class="skills-grid" id="skills"></div>
+  </section>
+
+  <!-- PROJEKTY -->
+  <section class="wrap section" id="projekty">
+    <span class="kicker">Projekty</span>
+    <h2>Vybrané práce</h2>
+    <p class="sub">Vzorové projekty. Vlastné doplníš v <code>data.js</code> → pole <code>PROJECTS</code>.</p>
+    <div class="filters" id="projectFilters">
+      <button data-f="" class="on">Všetko</button>
+      <button data-f="web">Web</button>
+      <button data-f="design">Dizajn</button>
+      <button data-f="app">Aplikácie</button>
+    </div>
+    <div class="grid" id="projects"></div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="wrap section" id="kontakt">
+    <span class="kicker">Kontakt</span>
+    <h2>Napíš mi</h2>
+    <p class="sub">Formulár je len šablóna (neodosiela nikam). Napoj si ho napr. na Formspree.</p>
+    <div class="contact-grid">
+      <div class="card">
+        <h3>Kontaktné údaje</h3>
+        <p>📧 <a href="mailto:meno@priklad.sk">meno@priklad.sk</a></p>
+        <p>📞 <a href="tel:+421900123456">+421 900 123 456</a></p>
+        <p>📍 Bratislava, Slovensko</p>
+        <div class="tags" style="margin-top:12px">
+          <span>GitHub</span><span>LinkedIn</span><span>CV.pdf</span>
+        </div>
+      </div>
+      <form class="card form" id="contactForm">
+        <div class="two">
+          <input id="cName" placeholder="Tvoje meno" required>
+          <input id="cEmail" type="email" placeholder="Email" required>
+        </div>
+        <input id="cSubject" placeholder="Predmet">
+        <textarea id="cMsg" rows="4" placeholder="Ahoj! Mám pre teba projekt..." required></textarea>
+        <button class="cta big" type="submit">Odoslať správu</button>
+        <p class="form-ok hidden" id="formOk">✓ Ďakujem! Toto je len šablóna — správu si napoj na vlastný backend.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>© <span id="year"></span> Moje prvé portfólio — šablóna</span>
+    <a href="#domov">↑ Späť hore</a>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
